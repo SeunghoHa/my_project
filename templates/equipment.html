@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <style>
+            .wrap {
+                width: 900px;
+                margin: auto;
+            }
+
+            .comment {
+                color: blue;
+                font-weight: bold;
+            }
+
+            /*            * {
+                            font-family: 'Modak', cursive;
+                        }*/
+
+            .register > button {
+                margin: 25px;
+            }
+
+            .box-container {
+                content: "";
+                clear: both;
+                display: block;
+            }
+
+            .equipmentDetails {
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card {
+                width: 33%;
+                margin: 5px auto;
+                padding: 10px;
+                border: black solid;
+                border-radius: 5px;
+                float: left;
+            }
+
+            .card-img-top {
+                width: auto;
+                height: auto;
+                max-height: 300px;
+            }
+
+            .sub-title {
+                border-bottom: solid 1px black;
+                margin-bottom: 10px;
+            }
+        </style>
+        <!-- Functions -->
+        <script>
+
+        </script>
+
+        <title>SF Diving</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/signup.css">
+        <script type="text/javascript" src="../static/signup.js"></script>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="title">
+                <h1>SF Diving - My Equipments</h1>
+            </div>
+            <div class="register">
+                <button class="register scubaDivingEquipment">
+                    Register New Scuba Diving Equipment
+                </button>
+                <button class="register freeDivingEquipment">
+                    Register New Free Diving Equipment
+                </button>
+            </div>
+            <div class="equipmentDetails scubaDiving">
+                <div class="sub-title">
+                    <h4>My Scuba Diving Equipments</h4>
+                </div>
+                <div class="box-container">
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://w0.pngwave.com/png/207/494/diving-snorkeling-masks-scuba-diving-underwater-diving-diving-equipment-mask-png-clip-art.png"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipment Name</h5>
+                            <p class="card-text">Equipment Production</p>
+                            <p class="card-text">Equipment Date</p>
+                            <button class="card-text comment">Delete</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://www.cressi.com/easyUp/store/zoom/1148_ic721905_sqg5_z.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipment Name</h5>
+                            <p class="card-text">Equipment Production</p>
+                            <p class="card-text">Equipment Date</p>
+                            <button class="card-text comment">Delete</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://i7.pngguru.com/preview/373/8/49/diving-swimming-fins-scuba-diving-underwater-diving-diving-snorkeling-masks-diving-equipment-swimming-thumbnail.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipment Name</h5>
+                            <p class="card-text">Equipment Production</p>
+                            <p class="card-text">Equipment Date</p>
+                            <button class="card-text comment">Delete</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://www.diveskiworld.co.nz/blog/wp-content/uploads/2016/01/aqua-solfx.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipment Name</h5>
+                            <p class="card-text">Equipment Production</p>
+                            <p class="card-text">Equipment Date</p>
+                            <button class="card-text comment">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="equipmentDetails freeDiving">
+                <div>
+                    <div class="sub-title">
+                        <h4>My Free Diving Equipments</h4>
+                    </div>
+                    <div class="box-container">
+                        <div class="card">
+                            <img class="card-img-top"
+                                 src="https://w0.pngwave.com/png/207/494/diving-snorkeling-masks-scuba-diving-underwater-diving-diving-equipment-mask-png-clip-art.png"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Equipment Name</h5>
+                                <p class="card-text">Equipment Production</p>
+                                <p class="card-text">Equipment Date</p>
+                                <button class="card-text comment">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top"
+                                 src="https://www.cressi.com/easyUp/store/zoom/1148_ic721905_sqg5_z.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Equipment Name</h5>
+                                <p class="card-text">Equipment Production</p>
+                                <p class="card-text">Equipment Date</p>
+                                <button class="card-text comment">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top"
+                                 src="https://i7.pngguru.com/preview/373/8/49/diving-swimming-fins-scuba-diving-underwater-diving-diving-snorkeling-masks-diving-equipment-swimming-thumbnail.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Equipment Name</h5>
+                                <p class="card-text">Equipment Production</p>
+                                <p class="card-text">Equipment Date</p>
+                                <button class="card-text comment">Delete</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top"
+                                 src="https://www.diveskiworld.co.nz/blog/wp-content/uploads/2016/01/aqua-solfx.jpg"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Equipment Name</h5>
+                                <p class="card-text">Equipment Production</p>
+                                <p class="card-text">Equipment Date</p>
+                                <button class="card-text comment">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+</html>
