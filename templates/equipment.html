@@ -28,29 +28,25 @@
                 margin: auto;
             }
 
-            .comment {
-                color: blue;
-                font-weight: bold;
-            }
-
-            /*            * {
-                            font-family: 'Modak', cursive;
-                        }*/
-
             .register > button {
                 margin: 25px;
             }
 
-            .box-container {
-                content: "";
-                clear: both;
-                display: block;
+            .sub-title {
+                border-bottom: solid 1px black;
+                margin-bottom: 10px;
             }
 
             .equipmentDetails {
                 margin-bottom: 15px;
                 display: flex;
                 flex-direction: column;
+            }
+
+            .box-container {
+                content: "";
+                clear: both;
+                display: block;
             }
 
             .card {
@@ -68,9 +64,10 @@
                 max-height: 300px;
             }
 
-            .sub-title {
-                border-bottom: solid 1px black;
-                margin-bottom: 10px;
+            .deleteBtn {
+                color: red;
+                border: solid 1px red;
+                font-weight: bold;
             }
         </style>
         <!-- Functions -->
@@ -111,7 +108,7 @@
                             <h5 class="card-title">Equipment Name</h5>
                             <p class="card-text">Equipment Production</p>
                             <p class="card-text">Equipment Date</p>
-                            <button class="card-text comment">Delete</button>
+                            <button class="deleteBtn">Delete</button>
                         </div>
                     </div>
                     <div class="card">
@@ -122,7 +119,7 @@
                             <h5 class="card-title">Equipment Name</h5>
                             <p class="card-text">Equipment Production</p>
                             <p class="card-text">Equipment Date</p>
-                            <button class="card-text comment">Delete</button>
+                            <button class="deleteBtn">Delete</button>
                         </div>
                     </div>
                     <div class="card">
@@ -133,7 +130,7 @@
                             <h5 class="card-title">Equipment Name</h5>
                             <p class="card-text">Equipment Production</p>
                             <p class="card-text">Equipment Date</p>
-                            <button class="card-text comment">Delete</button>
+                            <button class="deleteBtn">Delete</button>
                         </div>
                     </div>
                     <div class="card">
@@ -144,65 +141,62 @@
                             <h5 class="card-title">Equipment Name</h5>
                             <p class="card-text">Equipment Production</p>
                             <p class="card-text">Equipment Date</p>
-                            <button class="card-text comment">Delete</button>
+                            <button class="deleteBtn">Delete</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="equipmentDetails freeDiving">
-                <div>
-                    <div class="sub-title">
-                        <h4>My Free Diving Equipments</h4>
+                <div class="sub-title">
+                    <h4>My Free Diving Equipments</h4>
+                </div>
+                <div class="box-container">
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://w0.pngwave.com/png/207/494/diving-snorkeling-masks-scuba-diving-underwater-diving-diving-equipment-mask-png-clip-art.png"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipment Name</h5>
+                            <p class="card-text">Equipment Production</p>
+                            <p class="card-text">Equipment Date</p>
+                            <button class="deleteBtn">Delete</button>
+                        </div>
                     </div>
-                    <div class="box-container">
-                        <div class="card">
-                            <img class="card-img-top"
-                                 src="https://w0.pngwave.com/png/207/494/diving-snorkeling-masks-scuba-diving-underwater-diving-diving-equipment-mask-png-clip-art.png"
-                                 alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Equipment Name</h5>
-                                <p class="card-text">Equipment Production</p>
-                                <p class="card-text">Equipment Date</p>
-                                <button class="card-text comment">Delete</button>
-                            </div>
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://www.cressi.com/easyUp/store/zoom/1148_ic721905_sqg5_z.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipment Name</h5>
+                            <p class="card-text">Equipment Production</p>
+                            <p class="card-text">Equipment Date</p>
+                            <button class="deleteBtn">Delete</button>
                         </div>
-                        <div class="card">
-                            <img class="card-img-top"
-                                 src="https://www.cressi.com/easyUp/store/zoom/1148_ic721905_sqg5_z.jpg"
-                                 alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Equipment Name</h5>
-                                <p class="card-text">Equipment Production</p>
-                                <p class="card-text">Equipment Date</p>
-                                <button class="card-text comment">Delete</button>
-                            </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://i7.pngguru.com/preview/373/8/49/diving-swimming-fins-scuba-diving-underwater-diving-diving-snorkeling-masks-diving-equipment-swimming-thumbnail.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipment Name</h5>
+                            <p class="card-text">Equipment Production</p>
+                            <p class="card-text">Equipment Date</p>
+                            <button class="deleteBtn">Delete</button>
                         </div>
-                        <div class="card">
-                            <img class="card-img-top"
-                                 src="https://i7.pngguru.com/preview/373/8/49/diving-swimming-fins-scuba-diving-underwater-diving-diving-snorkeling-masks-diving-equipment-swimming-thumbnail.jpg"
-                                 alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Equipment Name</h5>
-                                <p class="card-text">Equipment Production</p>
-                                <p class="card-text">Equipment Date</p>
-                                <button class="card-text comment">Delete</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top"
-                                 src="https://www.diveskiworld.co.nz/blog/wp-content/uploads/2016/01/aqua-solfx.jpg"
-                                 alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Equipment Name</h5>
-                                <p class="card-text">Equipment Production</p>
-                                <p class="card-text">Equipment Date</p>
-                                <button class="card-text comment">Delete</button>
-                            </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://www.diveskiworld.co.nz/blog/wp-content/uploads/2016/01/aqua-solfx.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipment Name</h5>
+                            <p class="card-text">Equipment Production</p>
+                            <p class="card-text">Equipment Date</p>
+                            <button class="deleteBtn">Delete</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </body>
 
