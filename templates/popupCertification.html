@@ -1,10 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
+
     <head>
+        <!-- Required meta tags -->
         <meta charset="UTF-8">
-        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <style>
+            .wrap {
+                width: 900px;
+                margin: auto;
+            }
+
+            .search {
+                margin: 25px;
+            }
+
+            .sub-title {
+                border-bottom: solid 1px black;
+                margin-bottom: 10px;
+            }
+
+            .searchDetails {
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .box-container {
+                content: "";
+                clear: both;
+                display: block;
+            }
+
+            .card {
+                width: 33%;
+                margin: 5px auto;
+                padding: 10px;
+                border: black solid;
+                border-radius: 5px;
+                float: left;
+            }
+
+            .selected {
+                border: blue solid;
+                border-radius: 5px;
+            }
+
+            .card-img-top {
+                width: auto;
+                height: auto;
+                max-height: 200px;
+            }
+
+            .selectBtn {
+                color: blue;
+                border: solid 1px blue;
+                font-weight: bold;
+            }
+
+            .inputDate {
+                margin: 25px;
+            }
+
+            #obtainDate {
+                width: 300px;
+            }
+        </style>
+        <!-- Functions -->
+        <script>
+            // default value = today
+            $(document).ready(function () {
+                let now = new Date();
+                let month = (now.getMonth() + 1);
+                let day = now.getDate();
+                if (month < 10)
+                    month = "0" + month;
+                if (day < 10)
+                    day = "0" + day;
+                let today = now.getFullYear() + '-' + month + '-' + day;
+                $('#obtainDate').val(today);
+            });
+
+            // save
+            function saveBtn() {
+
+            }
+
+            // select
+            function selectBtn() {
+
+            }
+        </script>
+
+        <title>SF Diving</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/signup.css">
+        <script type="text/javascript" src="../static/signup.js"></script>
     </head>
+
     <body>
-        
+        <div class="wrap">
+            <div class="title">
+                <h1>Register My Certification</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Enter the category" style="width: 300px;">
+                <button class="searchBtn">Search</button>
+            </div>
+            <div class="searchDetails">
+                <div class="sub-title">
+                    <h4>Searched Certifications</h4>
+                </div>
+                <div class="box-container">
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://www.mojodiverskohtao.com/wp-content/uploads/2016/05/Divemaster-logo.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Certification Level</h5>
+                            <p class="card-text">Issuing Organization</p>
+                            <p class="card-text">Issuing Date</p>
+                            <button class="selectBtn" onclick="selectBtn()">Select</button>
+                        </div>
+                    </div>
+                    <div class="card selected">
+                        <img class="card-img-top"
+                             src="https://balidivetrek.com/wp-content/uploads/2018/12/c-advanced-open-water.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Certification Level</h5>
+                            <p class="card-text">Issuing Organization</p>
+                            <p class="card-text">Issuing Date</p>
+                            <button class="selectBtn">Select</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://cdn-mdb-originpull.head.com/CDN/D/93700583/1/598.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Certification Level</h5>
+                            <p class="card-text">Issuing Organization</p>
+                            <p class="card-text">Issuing Date</p>
+                            <button class="selectBtn">Select</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://underwatertreasures.com/wp-content/uploads/2017/11/Freediving-Level-3.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Certification Level</h5>
+                            <p class="card-text">Issuing Organization</p>
+                            <p class="card-text">Issuing Date</p>
+                            <button class="selectBtn">Select</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://www.onebreathfreediving.com/uploads/1/0/4/7/10473211/published/aida1-cover.png?1590916696"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Certification Level</h5>
+                            <p class="card-text">Issuing Organization</p>
+                            <p class="card-text">Issuing Date</p>
+                            <button class="selectBtn">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputDate">
+                <input type="date" id="obtainDate">
+                <button class="saveBtn" onclick="saveBtn()">Save</button>
+            </div>
+        </div>
     </body>
+
 </html>

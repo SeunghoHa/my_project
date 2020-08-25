@@ -1,10 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
     <head>
+        <!-- Required meta tags -->
         <meta charset="UTF-8">
-        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <style>
+            .wrap {
+                width: 900px;
+                margin: auto;
+            }
+
+            .divingPosition {
+                margin: 25px;
+            }
+
+            .sub-title {
+                border-bottom: solid 1px black;
+                margin-bottom: 10px;
+            }
+
+            .divingDetails {
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .divingLog {
+                content: "";
+                clear: both;
+                display: block;
+            }
+
+            .saveLog {
+                margin: 25px;
+                float: right;
+            }
+        </style>
+        <!-- Functions -->
+        <script>
+            // default value = today
+            $(document).ready(function () {
+                let now = new Date();
+                let month = (now.getMonth() + 1);
+                let day = now.getDate();
+                if (month < 10)
+                    month = "0" + month;
+                if (day < 10)
+                    day = "0" + day;
+                let today = now.getFullYear() + '-' + month + '-' + day;
+                $('#diveDate').val(today);
+            });
+
+            // save
+            function saveBtn() {
+
+            }
+        </script>
+
+        <title>SF Diving</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/signup.css">
+        <script type="text/javascript" src="../static/signup.js"></script>
     </head>
+
     <body>
-        
+        <div class="wrap">
+            <div class="title">
+                <h1>Log My Diving</h1>
+            </div>
+            <div class="divingPosition">
+                <table>
+                    <tr>
+                        <th style="width: 100px">Latitude</th>
+                        <td>(latitude from the map) deg</td>
+                    </tr>
+                    <tr>
+                        <th style="width: 100px">Longitude</th>
+                        <td>(longitude from the map) deg</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="divingDetails">
+                <div class="sub-title">
+                    <h4>Your Diving Details</h4>
+                </div>
+                <table class="divingLog" cellpadding="10" cellspacing="5">
+                    <tr>
+                        <th>Diving No.</th>
+                        <td><input type="number" style="width: 100px"></td>
+                        <th>Diving Point Name</th>
+                        <td><input type="text"></td>
+                        <th>Diving Date</th>
+                        <td><input type="date" id="diveDate"></td>
+                    </tr>
+                    <tr>
+                        <th>Diving Time In</th>
+                        <td><input type="time"></td>
+                        <th>Diving Time Out</th>
+                        <td><input type="time"></td>
+                        <th>Buddy Diver</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>Safety Stop</th>
+                        <td colspan="2">
+                            <input type="number" style="width: 50px"> min at
+                            <input type="number" style="width: 50px"> m
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Comments</th>
+                        <td colspan="10"><input type="text" style="width: 100%; height: 200px"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="saveLog">
+                <button class="saveBtn" onclick="saveBtn()">Save</button>
+            </div>
+        </div>
     </body>
+
 </html>
